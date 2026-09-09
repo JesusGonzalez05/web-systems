@@ -98,9 +98,8 @@
         <!-- add three chages that are not shown in class (there is a list that showcases examples in the lecture slide)-->
 <hr>
         <h2 id="apply">Fun People Apply</h2>
-        <p id="confirmation-message"></p>
         <p>If youre a super fun and not lame person come tag along!</p>
-        <form action="#join" method="get">
+        <form id="trip-form">
             <p>
             <label for="guest-name">Name:</label>
             <input id="guest-name" name="guest-name" type="text" required>
@@ -109,6 +108,7 @@
                 <label for="guest-email">Email:</label>
                 <input id="guest-email" name="guest-name" type="email" required>
             </p>
+            <p id="confirmation-message"></p>
             <button type="submit">Submit</button>
         </form>
 <hr>
