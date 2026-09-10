@@ -5,7 +5,10 @@
 * {
     box-sizing: border-box;
 }
-
+.night-mode {
+    background: #111;
+    color: white;
+}
 body {
     margin: 0 auto;
     max-width: 1100px;

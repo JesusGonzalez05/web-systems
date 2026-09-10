@@ -26,3 +26,7 @@ document.querySelector("#like-button").addEventListener("click", function() {
     likes++;
     document.querySelector("#likes").textContent = likes + " likes";
 });
+
+document.querySelector("#night-button").addEventListener("click", function() {
+    document.body.classList.toggle("night-mode");
+});
