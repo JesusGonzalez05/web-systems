@@ -20,3 +20,9 @@ form.addEventListener("submit", function(event){
 
 });
 
+let likes = 0;
+
+document.querySelector("#like-button").addEventListener("click", function() {
+    likes++;
+    document.querySelector("#likes").textContent = likes + " likes";
+});
