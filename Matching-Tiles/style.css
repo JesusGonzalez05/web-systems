@@ -13,8 +13,21 @@ body {
 
 
 /* Visible component styles */
+h1{
+    color: #1f2937;
+    text-align: center;
+}
 
+img{
+    width: 420px;
+    border-radius: 18px;
+}
 
+button{
+    background-color: #1f2937;
+    color: white;
+    padding: 12px;
+}
 
 /* One specific message area */
 #confirmation-message {
