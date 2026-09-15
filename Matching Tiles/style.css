@@ -1,9 +1,15 @@
 /* Global setup */
-
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 
 /* Page foundation */
 
+body {
+    background-color: f4flea;
+    font-family: georgia, serif;
+}
 
 
 /* Visible component styles */
@@ -11,5 +17,7 @@
 
 
 /* One specific message area */
-
-
+#confirmation-message {
+    color: darkgreen;
+    font-weight: bold;
+}
