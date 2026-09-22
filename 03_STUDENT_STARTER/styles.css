@@ -1,28 +1,354 @@
-* { 
-    box-sizing: 
-    border-box; 
+
+/* -------------------------
+   BASIC PAGE SETUP
+------------------------- */
+
+* {
+    box-sizing: border-box;
 }
 
-body { 
-    margin: 0; 
-    min-height: 100vh; 
-    display: grid; 
-    place-items: center; 
-    font-family: Georgia, serif; 
-    transition: .35s ease; 
-    padding: 32px; 
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    padding: 30px;
+
+    font-family: Georgia, serif;
+
+    background: #eeeeee;
+
+    transition: 0.5s ease;
 }
 
-.card { width: min(760px, 100%); background: rgba(255,255,255,.92); padding: 34px; border-radius: 24px; text-align: center; box-shadow: 0 18px 45px rgba(0,0,0,.18); }
-.eyebrow { letter-spacing: 2px; font-size: .78rem; font-weight: bold; }
-h1 { font-size: clamp(2rem, 6vw, 3.7rem); margin: 8px 0; }
-#tagline { font-size: 1.08rem; }
-img { width: 100%; max-height: 260px; object-fit: cover; border-radius: 18px; margin: 18px 0; border: 4px solid white; }
-.vibes { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-button, select { font: inherit; min-height: 46px; border-radius: 999px; border: 2px solid #222; padding: 10px 18px; background: white; cursor: pointer; }
-label { display:block; font-weight:bold; margin: 20px 0 8px; }
-.reveal { display:block; margin: 14px auto; font-weight:bold; }
-.result { min-height: 54px; font-size: 1.15rem; font-weight:bold; padding: 14px; }
-.luxury { background: linear-gradient(135deg,#1e1720,#c6a15b); color:#261d14; }
-.vacation { background: linear-gradient(135deg,#bfe9ff,#f7e3a1); color:#083c52; }
-.nightlife { background: linear-gradient(135deg,#080814,#3d155f); color:#21132e; }
+
+/* -------------------------
+   MAIN CARD
+------------------------- */
+
+.card {
+    width: min(750px, 100%);
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+/* -------------------------
+   TEXT
+------------------------- */
+
+.eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    margin: 10px 0;
+}
+
+#tagline {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+
+/* -------------------------
+   ACTIVITY IMAGE
+------------------------- */
+
+#activity-image {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 20px auto;
+
+    border-radius: 20px;
+
+    border: 4px solid white;
+
+    transition: 0.4s ease;
+}
+
+
+/* -------------------------
+   ACTIVITY BUTTONS
+------------------------- */
+
+.activities {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+button,
+select {
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    padding: 13px 20px;
+
+    min-height: 46px;
+
+    border-radius: 50px;
+
+    border: 2px solid #222;
+
+    background: white;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-4px) scale(1.03);
+}
+
+
+/* -------------------------
+   HOURS
+------------------------- */
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    margin: 20px 0 10px;
+}
+
+select {
+    min-width: 160px;
+}
+
+
+/* -------------------------
+   REVEAL BUTTON
+------------------------- */
+
+.reveal {
+    display: block;
+
+    margin: 25px auto 15px;
+
+    font-weight: bold;
+
+    background: #222;
+
+    color: white;
+}
+
+.reveal:hover {
+    background: #444;
+}
+
+
+/* -------------------------
+   RESULT
+------------------------- */
+
+.result-box {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border: 2px dashed #555;
+
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.result-box h2 {
+    margin-top: 0;
+
+    font-size: 1.8rem;
+}
+
+#result {
+    font-size: 1.15rem;
+
+    min-height: 30px;
+}
+
+
+/* =================================================
+   THRIFTING
+   70s RETRO THEME
+================================================= */
+
+body.thrifting {
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #f4c95d 0 8%,
+            transparent 9%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            #d95d39 0 10%,
+            transparent 11%
+        ),
+        linear-gradient(
+            135deg,
+            #e8a87c,
+            #f4d35e,
+            #8f4f3a
+        );
+
+    color: #432818;
+}
+
+body.thrifting .card {
+    background: #f7e7c6;
+
+    border: 5px solid #432818;
+
+    box-shadow:
+        10px 10px 0 #432818;
+}
+
+body.thrifting button {
+    background: #f4c95d;
+
+    color: #432818;
+
+    border-color: #432818;
+}
+
+body.thrifting .reveal {
+    background: #432818;
+
+    color: #f7e7c6;
+}
+
+body.thrifting .result-box {
+    background: #f1b24a;
+
+    border-color: #432818;
+}
+
+
+/* =================================================
+   CROCHETING
+   LIGHT & AIRY THEME
+================================================= */
+
+body.crocheting {
+    background:
+        linear-gradient(
+            135deg,
+            #e8f5f2,
+            #fdf6f0,
+            #dcecf7
+        );
+
+    color: #526b68;
+}
+
+body.crocheting .card {
+    background: rgba(255, 255, 255, 0.85);
+
+    border: 2px solid #d7e7e3;
+
+    box-shadow:
+        0 20px 50px rgba(130, 160, 160, 0.2);
+}
+
+body.crocheting button {
+    background: #f7ebe5;
+
+    color: #526b68;
+
+    border-color: #b9d4ce;
+}
+
+body.crocheting .reveal {
+    background: #8fb9b1;
+
+    color: white;
+}
+
+body.crocheting .result-box {
+    background: #f5faf8;
+
+    border-color: #b9d4ce;
+}
+
+
+/* =================================================
+   MANGA
+   JJK-INSPIRED THEME
+================================================= */
+
+body.manga {
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            #5d3fd3,
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            #00a6a6,
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #080814,
+            #191331
+        );
+
+    color: white;
+}
+
+body.manga .card {
+    background: rgba(12, 10, 25, 0.94);
+
+    border: 3px solid #7654e8;
+
+    box-shadow:
+        0 0 30px rgba(118, 84, 232, 0.4);
+}
+
+body.manga button {
+    background: #17142b;
+
+    color: white;
+
+    border-color: #7654e8;
+}
+
+body.manga .reveal {
+    background: #7654e8;
+
+    color: white;
+}
+
+body.manga .result-box {
+    background: rgba(42, 31, 75, 0.8);
+
+    border-color: #00a6a6;
+}

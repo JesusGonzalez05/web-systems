@@ -1,37 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luxury Mood Switcher</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Busy?</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="luxury">
-  <main class="card">
-    <p class="eyebrow">DR. HOLLOMAN'S VERY SERIOUS PLANNER 😂</p>
-    <h1>What's the vibe tonight?</h1>
-    <p id="tagline">Pick a mood and let the page match your energy.</p>
 
-    <img id="vibe-image" src="luxury.svg" alt="Gold luxury lounge illustration">
+<body class="default">
 
-    <section class="vibes" aria-label="Choose a vibe">
-      <button id="luxury-btn">🥂 Luxury</button>
-      <button id="vacation-btn">🌴 Vacation</button>
-      <button id="nightlife-btn">🌙 Nightlife</button>
-    </section>
+    <main class="card">
 
-    <hr>
+        <p class="eyebrow">
+            Got free time?
+        </p>
 
-    <label for="budget">What's tonight's budget?</label>
-    <select id="budget">
-      <option value="50">$50</option>
-      <option value="250">$250</option>
-      <option value="1000">$1,000</option>
-    </select>
+        <h1>What's the move today?</h1>
 
-    <button id="reveal-btn" class="reveal">REVEAL MY NIGHT</button>
-    <p id="result" class="result">Your plan will appear here.</p>
-  </main>
-  <script src="script.js"></script>
+        <p id="tagline">
+            Pick an activity that sounds fun and the time you have available!
+        </p>
+
+
+        <!-- Activity Picture -->
+
+        <img
+            id="activity-image"
+            src="dog.png"
+            alt="Dog"
+        >
+
+
+        <!-- Activity Buttons -->
+
+        <section class="activities">
+
+            <button id="thrift-btn">
+                Thrifting
+            </button>
+
+            <button id="crochet-btn">
+                Crocheting
+            </button>
+
+            <button id="manga-btn">
+                Reading Manga
+            </button>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- Hours -->
+
+        <label for="hours">
+            How many hours do you have?
+        </label>
+
+        <select id="hours">
+
+            <option value="1">1 Hour</option>
+
+            <option value="2">2 Hours</option>
+
+            <option value="4">4 Hours</option>
+
+        </select>
+
+
+        <!-- Reveal Button -->
+
+        <!-- CHANGE BUTTON TEXT -->
+
+        <button id="reveal-btn" class="reveal">
+            WHAT SHOULD I DO?
+        </button>
+
+
+        <!-- HIDE / SHOW SOMETHING -->
+
+        <button id="toggle-btn">
+            Show/Hide Instructions
+        </button>
+
+        <p id="instructions">
+            Pick an activity, choose your hours, and reveal your plan!
+        </p>
+
+
+        <!-- GUEST / CLICK COUNTER -->
+
+        <p>
+            Vibe checks: <span id="click-count">0</span>
+        </p>
+
+
+        <!-- Result -->
+
+        <section class="result-box">
+
+            <h2 id="activity-title">
+                Your move and no one else's
+            </h2>
+
+            <p id="result">
+                Your super duper fun plan will appear here!
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
