@@ -1,0 +1,28 @@
+* { 
+    box-sizing: 
+    border-box; 
+}
+
+body { 
+    margin: 0; 
+    min-height: 100vh; 
+    display: grid; 
+    place-items: center; 
+    font-family: Georgia, serif; 
+    transition: .35s ease; 
+    padding: 32px; 
+}
+
+.card { width: min(760px, 100%); background: rgba(255,255,255,.92); padding: 34px; border-radius: 24px; text-align: center; box-shadow: 0 18px 45px rgba(0,0,0,.18); }
+.eyebrow { letter-spacing: 2px; font-size: .78rem; font-weight: bold; }
+h1 { font-size: clamp(2rem, 6vw, 3.7rem); margin: 8px 0; }
+#tagline { font-size: 1.08rem; }
+img { width: 100%; max-height: 260px; object-fit: cover; border-radius: 18px; margin: 18px 0; border: 4px solid white; }
+.vibes { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+button, select { font: inherit; min-height: 46px; border-radius: 999px; border: 2px solid #222; padding: 10px 18px; background: white; cursor: pointer; }
+label { display:block; font-weight:bold; margin: 20px 0 8px; }
+.reveal { display:block; margin: 14px auto; font-weight:bold; }
+.result { min-height: 54px; font-size: 1.15rem; font-weight:bold; padding: 14px; }
+.luxury { background: linear-gradient(135deg,#1e1720,#c6a15b); color:#261d14; }
+.vacation { background: linear-gradient(135deg,#bfe9ff,#f7e3a1); color:#083c52; }
+.nightlife { background: linear-gradient(135deg,#080814,#3d155f); color:#21132e; }

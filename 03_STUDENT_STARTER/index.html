@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Mood Switcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="luxury">
+  <main class="card">
+    <p class="eyebrow">DR. HOLLOMAN'S VERY SERIOUS PLANNER 😂</p>
+    <h1>What's the vibe tonight?</h1>
+    <p id="tagline">Pick a mood and let the page match your energy.</p>
+
+    <img id="vibe-image" src="luxury.svg" alt="Gold luxury lounge illustration">
+
+    <section class="vibes" aria-label="Choose a vibe">
+      <button id="luxury-btn">🥂 Luxury</button>
+      <button id="vacation-btn">🌴 Vacation</button>
+      <button id="nightlife-btn">🌙 Nightlife</button>
+    </section>
+
+    <hr>
+
+    <label for="budget">What's tonight's budget?</label>
+    <select id="budget">
+      <option value="50">$50</option>
+      <option value="250">$250</option>
+      <option value="1000">$1,000</option>
+    </select>
+
+    <button id="reveal-btn" class="reveal">REVEAL MY NIGHT</button>
+    <p id="result" class="result">Your plan will appear here.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

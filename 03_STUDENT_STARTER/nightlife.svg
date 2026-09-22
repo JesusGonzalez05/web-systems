@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="#100d22"/>
+<circle cx="950" cy="120" r="170" fill="#9d4edd" opacity=".35"/>
+<circle cx="170" cy="430" r="220" fill="#9d4edd" opacity=".2"/>
+<text x="600" y="215" text-anchor="middle" font-size="100">🌙</text>
+<text x="600" y="320" text-anchor="middle" font-family="Georgia" font-size="64" font-weight="bold" fill="white">NIGHTLIFE</text>
+<text x="600" y="375" text-anchor="middle" font-family="Georgia" font-size="27" fill="white">Outside outside</text>
+</svg>
