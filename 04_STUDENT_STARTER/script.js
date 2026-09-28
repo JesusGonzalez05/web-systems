@@ -20,7 +20,25 @@ const tripCount = document.querySelector("#tripCount");
 
 saveBtn.addEventListener("click", function () {
 
-  // TODO: Create a trip object with:
+  // Create a trip object
+  const trip = {
+    name: nameInput.value,
+    destination: destinationInput.value,
+    vibe: vibeInput.value,
+    budget: budgetInput.value,
+    mustHave: mustHaveInput.value
+  };
+
+  // Save the trip to local storage
+  localStorage.setItem("trip", JSON.stringify(trip));
+
+  // Display the saved trip
+  savedDestination.textContent = trip.destination;
+  savedVibe.textContent = trip.vibe;
+  savedBudget.textContent = trip.budget;
+  savedMustHave.textContent = trip.mustHave;
+
+  welcome.textContent = "Trip saved!";
 
 
 });
