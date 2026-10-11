@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>One Piece: Egghead Trivia</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- START SCREEN -->
+        <section id="start-screen" class="card">
+
+            <h1>ONE PIECE</h1>
+            <h2>EGGHEAD TRIVIA</h2>
+
+            <p class="intro">
+                Think you know the Grand Line?
+                Test your One Piece knowledge and see
+                if you have what it takes to become Pirate King!
+            </p>
+
+            <div class="scoreboard">
+                <h3>🏆 Pirate Record</h3>
+                <p>High Score: <span id="high-score">0</span>/5</p>
+            </div>
+
+            <button id="start-btn">START TRIVIA</button>
+
+        </section>
+
+
+        <!-- QUIZ SCREEN -->
+        <section id="quiz-screen" class="card hidden">
+
+            <div class="quiz-header">
+
+                <p>
+                    Question <span id="question-number">1</span>/5
+                </p>
+
+                <p>
+                    Score: <span id="score">0</span>
+                </p>
+
+            </div>
+
+            <div id="loading" class="hidden">
+                Loading...
+            </div>
+
+            <h2 id="question">
+                Question goes here
+            </h2>
+
+            <div id="answers" class="answers">
+
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+
+            </div>
+
+            <p id="feedback"></p>
+
+        </section>
+
+
+        <!-- END SCREEN -->
+        <section id="end-screen" class="card hidden">
+
+            <h1>TRIVIA COMPLETE!</h1>
+
+            <p class="final-score">
+                You scored
+                <span id="final-score">0</span>/5
+            </p>
+
+            <p id="goodbye-message"></p>
+
+            <div class="scoreboard">
+
+                <h3>🏆 Pirate Record</h3>
+
+                <p>
+                    High Score:
+                    <span id="final-high-score">0</span>/5
+                </p>
+
+            </div>
+
+            <p class="goodbye">
+                Thanks for playing!
+                Until we meet again on the Grand Line... 🏴‍☠️
+            </p>
+
+            <button id="play-again-btn">
+                PLAY AGAIN
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
