@@ -53,6 +53,47 @@ saveBtn.addEventListener("click", function () {
 // - Welcome me back
 // - Remember my theme
 // - Forget my trip
+// FORGET THE SAVED TRIP 
+function forgetTrip() { 
+  localStorage.removeItem("trip"); 
+  savedDestination.textContent = "—"; 
+  savedVibe.textContent = "—"; 
+  savedBudget.textContent = "—"; 
+  savedMustHave.textContent = "—"; 
+  welcome.textContent = "No trip saved yet."; 
+} 
+// Run the forget function when the button is clicked 
+forgetBtn.addEventListener("click", forgetTrip);
 // - Trip counter
 // - Recently planned destinations
+
 // --------------------------------------------------
+// Load the saved trip when the page refreshes
+function loadTrip() {
+
+  const savedTrip = localStorage.getItem("trip");
+
+  if (savedTrip) {
+
+    const trip = JSON.parse(savedTrip);
+
+    savedDestination.textContent = trip.destination;
+    savedVibe.textContent = trip.vibe;
+    savedBudget.textContent = trip.budget;
+    savedMustHave.textContent = trip.mustHave;
+
+    welcome.textContent = "Welcome back! Your trip is still saved.";
+
+  } else {
+
+    savedDestination.textContent = "—";
+    savedVibe.textContent = "—";
+    savedBudget.textContent = "—";
+    savedMustHave.textContent = "—";
+
+    welcome.textContent = "No trip saved yet.";
+  }
+}
+
+// Run when the page loads
+loadTrip();
